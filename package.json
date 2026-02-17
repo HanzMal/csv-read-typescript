@@ -1,0 +1,30 @@
+{
+  "name": "csv-read-typescript",
+  "version": "1.0.0",
+  "description": "repo for my csv read app with typescript. No Framework. Also we learn deep about typescript.",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanzMal/csv-read-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/HanzMal/csv-read-typescript/issues"
+  },
+  "homepage": "https://github.com/HanzMal/csv-read-typescript#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3"
+  }
+}
