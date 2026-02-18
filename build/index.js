@@ -1,8 +1,11 @@
-import { CsvFileReader } from './CsvFileReader.js';
 import { MatchResult } from './MatchResult.js';
-const listMatches = new CsvFileReader('football.csv');
+import { MatchReader } from './MatchReader.js';
+const listMatches = new MatchReader('football.csv');
 listMatches.read();
+listMatches.readData();
 let LiverpoolWins = 0;
+console.log("listMatches data 0", listMatches?.data?.[0]);
+console.log("listMatches listdata 0", listMatches?.listdata?.[0]);
 for (const match of listMatches.data) {
     if (match[1] === "Liverpool" && match[5] === MatchResult.HomeWin) {
         LiverpoolWins++;
