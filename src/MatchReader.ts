@@ -1,8 +1,5 @@
 import { CsvFileReader } from "./CsvFileReader.js";
-import type { MatchResult } from "./MatchResult.js";
 import { dateStringToDate } from "./utils.js";
-
-type MatchData = [Date, string, string, number, number, MatchResult, string]
 
 export class MatchReader extends CsvFileReader<MatchData> {
     mapRow = (row: string[]): MatchData => {
