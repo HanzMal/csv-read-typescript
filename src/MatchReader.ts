@@ -1,4 +1,5 @@
 import { CsvFileReader } from "./CsvFileReader.js";
+import type { MatchData } from "./MatchData.js";
 import { dateStringToDate } from "./utils.js";
 
 export class MatchReader extends CsvFileReader<MatchData> {
